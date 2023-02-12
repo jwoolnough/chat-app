@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply border-solid border-ui;
+  }
+
+  html {
+    @apply font-azo-sans text-body text-opacity-80;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    font-size: 0.875rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium text-white;
+  }
+
+  h1 {
+    @apply text-xl;
+  }
+
+  h2 {
+    @apply text-lg;
+  }
+
+  h3 {
+    @apply text-[1.25rem];
+  }
+
+  a,
+  button,
+  input,
+  label,
+  select,
+  textarea {
+    @apply transition;
+    transition-duration: 200ms;
+  }
+
+  a,
+  button {
+    @apply outline-none focus:ring-2;
+  }
+
+  ::selection,
+  button::selection {
+    @apply bg-accent text-white;
+  }
+}
+
+@layer components {
+  .transition-none * {
+    transition: none;
+  }
+}
