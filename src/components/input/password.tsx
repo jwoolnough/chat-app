@@ -1,9 +1,10 @@
-import type { InputProps, RenderInputRightElement } from "./input";
-import { Input } from "./input";
-import { Button } from "@components/button";
-import { clsxm } from "@utils/clsxm";
 import { forwardRef, useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { Button } from "@components/button";
+import { clsxm } from "@utils/clsxm";
+import type { InputProps, RenderInputRightElement } from "./input";
+import { Input } from "./input";
+
 
 type PasswordInputProps = Omit<InputProps, "ref">;
 

@@ -442,7 +442,7 @@
     "@tanstack/query-core" "4.24.4"
     "use-sync-external-store" "^1.2.0"
 
-"@trivago/prettier-plugin-sort-imports@*", "@trivago/prettier-plugin-sort-imports@^4.0.0":
+"@trivago/prettier-plugin-sort-imports@*":
   "integrity" "sha512-Tyuk5ZY4a0e2MNFLdluQO9F6d1awFQYXVVujEPFfvKPPXz8DADNHzz73NMhwCSXGSuGGZcA/rKOyZBrxVNMxaA=="
   "resolved" "https://registry.npmjs.org/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.0.0.tgz"
   "version" "4.0.0"
@@ -1260,7 +1260,7 @@
   dependencies:
     "debug" "^3.2.7"
 
-"eslint-plugin-import@*", "eslint-plugin-import@^2.26.0":
+"eslint-plugin-import@*", "eslint-plugin-import@^2.26.0", "eslint-plugin-import@^2.27.5":
   "integrity" "sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.27.5.tgz"
   "version" "2.27.5"
@@ -2462,7 +2462,7 @@
   "resolved" "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   "version" "1.2.1"
 
-"prettier-plugin-organize-imports@*", "prettier-plugin-organize-imports@^3.2.2":
+"prettier-plugin-organize-imports@*":
   "integrity" "sha512-e97lE6odGSiHonHJMTYC0q0iLXQyw0u5z/PJpvP/3vRy6/Zi9kLBwFAbEGjDzIowpjQv8b+J04PDamoUSQbzGA=="
   "resolved" "https://registry.npmjs.org/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-3.2.2.tgz"
   "version" "3.2.2"

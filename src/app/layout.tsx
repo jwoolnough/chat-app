@@ -1,7 +1,7 @@
 "use client";
 
-import "../styles/globals.css";
 import { ThemeToggle } from "@components/theme-toggle";
+import "../styles/globals.css";
 
 interface RootLayoutProps {
   children: React.ReactNode;

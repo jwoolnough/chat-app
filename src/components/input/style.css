@@ -1,5 +1,5 @@
-.input-container:has(.input:focus) .input-label,
-.input-container:has(.input:not(:placeholder-shown)) .input-label {
+.input-container:has(.input:focus, .input:not(:placeholder-shown))
+  .input-label {
   @apply translate-y-[-17px] scale-75 bg-card text-accent text-opacity-80;
 }
 
@@ -7,7 +7,7 @@
   @apply text-opacity-100 !important;
 }
 
-.input-container:has(.input:focus) .input::placeholder,
-.input-container:has(.input:not(:placeholder-shown)) .input::placeholder {
+.input-container:has(.input:focus, .input:not(:placeholder-shown))
+  .input::placeholder {
   @apply opacity-100 delay-100;
 }

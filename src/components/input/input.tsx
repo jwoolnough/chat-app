@@ -1,6 +1,6 @@
 import "./style.css";
-import { clsxm } from "@utils/clsxm";
 import { forwardRef, useId } from "react";
+import { clsxm } from "@utils/clsxm";
 
 type RenderInputRightElement = (renderInputRightElementBag: {
   defaultClasses: string;
