@@ -31,11 +31,12 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           "button",
           "rounded-md",
           "border border-white border-opacity-10",
-          "bg-accent py-2 px-4 font-medium text-white",
-          "hover hover:bg-white hover:text-black",
+          "py-2 px-4 font-medium text-white",
+          "hover:text-white dark:hover:text-black",
           size === "sm" && "py-2 px-3",
+          variant !== "link" && "bg-accent hover:bg-black dark:hover:bg-white",
           variant === "link" &&
-            "border-0 bg-transparent p-0 text-accent hover:bg-transparent hover:text-white",
+            "border-0 bg-transparent dark:bg-transparent p-0 text-accent hover:text-black dark:hover:text-white",
           loading && "",
           className
         )}

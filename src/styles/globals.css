@@ -10,9 +10,17 @@
   }
 
   html {
-    @apply font-azo-sans text-body text-opacity-80;
+    @apply font-azo-sans text-body;
     font-size: 1em;
     line-height: 1.5;
+  }
+
+  html.dark {
+    @apply text-body-dark;
+  }
+
+  html.is-switching-theme :is(*, *::before, *::after) {
+    @apply transition;
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {
@@ -31,7 +39,7 @@
   h4,
   h5,
   h6 {
-    @apply font-medium text-white;
+    @apply font-medium text-black dark:text-white;
   }
 
   h1 {

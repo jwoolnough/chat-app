@@ -1,6 +1,6 @@
-import "./style.css";
 import { forwardRef, useId } from "react";
 import { clsxm } from "@utils/clsxm";
+import "./style.css";
 
 type RenderInputRightElement = (renderInputRightElementBag: {
   defaultClasses: string;
@@ -40,7 +40,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         <label
           className={clsxm(
             "input-label",
-            "absolute top-[9px] left-[13px] inline-block origin-top-left cursor-text px-1 text-sm",
+            "absolute top-[9px] left-[13px] inline-block origin-top-left cursor-text px-1 text-sm text-body-dark",
             labelClassName
           )}
           htmlFor={id}
@@ -52,9 +52,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           id={id}
           className={clsxm(
             "input",
-            "w-full rounded-md border border-accent border-opacity-30 bg-transparent px-4 py-2 text-white",
+            "w-full rounded-md border border-accent border-opacity-30 bg-transparent px-4 py-2 dark:text-white",
             "outline-none focus:border-opacity-100",
-            "placeholder:text-ui placeholder:opacity-0 placeholder:transition-opacity",
+            "placeholder:text-body-dark placeholder:text-opacity-75 dark:placeholder:text-ui placeholder:opacity-0 placeholder:transition-opacity",
             className
           )}
           placeholder={placeholder}
