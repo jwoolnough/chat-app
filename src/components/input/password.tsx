@@ -1,10 +1,10 @@
 import { forwardRef, useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+
 import { Button } from "@components/button";
 import { clsxm } from "@utils/clsxm";
-import type { InputProps, RenderInputRightElement } from "./input";
-import { Input } from "./input";
 
+import { Input, type InputProps, type RenderInputRightElement } from "./input";
 
 type PasswordInputProps = Omit<InputProps, "ref">;
 

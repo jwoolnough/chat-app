@@ -79,4 +79,28 @@
   .transition-none * {
     transition: none;
   }
+
+  .button {
+    @apply inline-block;
+    @apply rounded-md;
+    @apply border border-white border-opacity-10;
+    @apply py-2 px-4 font-medium text-white;
+    @apply hover:text-white dark:hover:text-black;
+  }
+
+  .button-default {
+    @apply bg-accent hover:bg-black dark:hover:bg-white;
+  }
+
+  .button-link {
+    @apply border-0 bg-transparent dark:bg-transparent p-0 text-accent hover:text-black dark:hover:text-white
+  }
+
+  .button-sm {
+    @apply py-2 px-3;
+  }
+
+  .button-lg {
+    @apply py-3 px-4;
+  }
 }
